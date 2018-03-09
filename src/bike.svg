@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="120" viewBox="0 0 200 120">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #366d90;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #366d90;
+      }
+
+      .cls-3, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 0;
+      }
+
+      .cls-5 {
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <circle id="Back_Wheel" data-name="Back Wheel" class="cls-1" cx="40.5" cy="78.5" r="39.5"/>
+  <circle id="Front_Wheel" data-name="Front Wheel" class="cls-1" cx="158.5" cy="78.5" r="39.5"/>
+  <circle id="Cogwheel" class="cls-2" cx="88" cy="85" r="13"/>
+  <path id="Cog_Internals" data-name="Cog Internals" class="cls-3" d="M86,88v6h3V90l2-1h6l-3-3-3-2Z"/>
+  <circle id="Front_Cog" data-name="Front Cog" class="cls-4" cx="158" cy="79" r="5"/>
+  <circle id="Back_Cog" data-name="Back Cog" class="cls-4" cx="41" cy="79" r="5"/>
+  <path id="Back_Tube" data-name="Back Tube" class="cls-3" d="M64.433,8.606l3.7-1.084L91.723,88.143l-3.7,1.084Z"/>
+  <path id="Top_Tube" data-name="Top Tube" class="cls-3" d="M69.912,26.036L69.9,22.789l66.457-2.842,0.013,3.247Z"/>
+  <path id="Bottom_Tube" data-name="Bottom Tube" class="cls-3" d="M90.07,85.417l-2.3-2.295L138.75,28.558l2.3,2.295Z"/>
+  <path id="Front_Tube" data-name="Front Tube" class="cls-3" d="M132,13l13,39,5,12,6,11,1-1-5-10-4-14L135,11"/>
+  <path id="Handlebars" class="cls-3" d="M132,12h9l4,1,3,1,4,2,3,3,2,4v4l-2,4-3,4-4,2-3,1h-7V34h6l5-2,3-3,1-2V23l-1-2-3-2-2-1-6-2h-6l-3-4"/>
+  <path id="Backstay" class="cls-5" d="M69,26L42,74h2L70,28l-1-2"/>
+  <path id="Chain_Bot" data-name="Chain Bot" class="cls-3" d="M43.023,75.577l-0.029-1,39.983-1.154,0.029,1Z"/>
+  <path id="Chain_Top" data-name="Chain Top" class="cls-3" d="M41.6,83.6l0.269-.963L80.4,93.4l-0.269.963Z"/>
+  <path id="Chainstay" class="cls-3" d="M45,79l42,4v5L44,81Z"/>
+  <path id="Pedal" class="cls-3" d="M89,89l8,13-2,1v3l3,1,6-1,1-3-4-1L91,88Z"/>
+  <path id="Seat" class="cls-3" d="M83,2H60L57,1H54L53,2V5l3,2,2,1,3,1v1h4l3-1,2-1,2-1,2-1h3l2,1h3l2-1V3L83,2"/>
+</svg>
