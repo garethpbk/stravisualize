@@ -1,21 +1,22 @@
-import React from "react";
-import Drawer from "material-ui/Drawer";
-import Divider from "material-ui/Divider";
-import TextField from "material-ui/TextField";
-import RaisedButton from "material-ui/RaisedButton";
-import Strav from "./Strav";
+import React from 'react';
+import Drawer from 'material-ui/Drawer';
+import Divider from 'material-ui/Divider';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
+import Strav from './Strav';
 
 const Activities = props => {
   const fieldStyle = {
-    paddingLeft: "5px",
-    marginBottom: "10px",
-    width: "95%"
+    paddingLeft: '5px',
+    marginBottom: '10px',
+    width: '95%'
   };
 
   return (
     <div id="activity-feed">
       <Drawer open={props.open} width={300}>
-        <h1 style={{ textAlign: "center" }}>ACTIVITIES</h1>
+        <h1 style={{ textAlign: 'center' }}>ACTIVITIES</h1>
+        <RaisedButton label="Toggle" onClick={props.handleToggle} style={{ marginBottom: '25px', width: '100%' }} />
         <Divider />
         <TextField
           hintText="Enter Api Key..."

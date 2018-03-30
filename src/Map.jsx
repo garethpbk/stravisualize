@@ -1,30 +1,45 @@
-import React, { Component } from "react";
-import { withScriptjs, withGoogleMap, GoogleMap, Marker, Polyline } from "react-google-maps";
+import React, { Component } from 'react';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker, Polyline } from 'react-google-maps';
 
 const MapComponent = withScriptjs(
   withGoogleMap(props => {
-    let startLat = props.startLatLng[0];
-    let startLng = props.startLatLng[1];
+    if (props.startLatLng) {
+      let startLat = props.startLatLng[0];
+      let startLng = props.startLatLng[1];
 
-    let route = props.route;
-    if (route != null) {
-      route = route.map(x => {
-        return {
-          lat: x[0],
-          lng: x[1]
-        };
-      });
-    } else {
-      route = [];
+      let route = props.route;
+      if (route != null) {
+        route = route.map(x => {
+          return {
+            lat: x[0],
+            lng: x[1]
+          };
+        });
+      } else {
+        route = [];
+      }
+
+      return (
+        <GoogleMap
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbpXTSqO8hgDKBGSKFVMBR6C1lDGTam4w"
+          defaultZoom={13}
+          defaultCenter={{ lat: startLat, lng: startLng }}
+          center={{ lat: startLat, lng: startLng }}
+        >
+          <Polyline path={route} />
+          {props.isMarkerShown && <Marker position={{ lat: startLat, lng: startLng }} />}
+        </GoogleMap>
+      );
     }
-
+    let startLat = 32.73;
+    let startLng = -117.16;
     return (
       <GoogleMap
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbpXTSqO8hgDKBGSKFVMBR6C1lDGTam4w"
         defaultZoom={13}
         defaultCenter={{ lat: startLat, lng: startLng }}
         center={{ lat: startLat, lng: startLng }}
       >
-        <Polyline path={route} />
         {props.isMarkerShown && <Marker position={{ lat: startLat, lng: startLng }} />}
       </GoogleMap>
     );
