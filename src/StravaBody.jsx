@@ -43,10 +43,10 @@ export default props => (
         </Col>
       </Row>
       <Row>
-        <Col xs={2} style={{ marginTop: '20px' }}>
+        <Col xs={12} lg={2} style={{ marginTop: '20px' }}>
           <RaisedButton label="Toggle Activities" onClick={props.handleToggle} style={{ textAlign: 'center' }} />
         </Col>
-        <Col xs={9}>
+        <Col xs={12} lg={9}>
           <Stats
             actId={props.actId}
             actName={props.actName}
@@ -58,7 +58,7 @@ export default props => (
             actSpeed={props.actSpeed}
           />
         </Col>
-        <Col xs={1} />
+        <Col lg={1} />
       </Row>
     </Grid>
   </div>

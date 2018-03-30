@@ -1,33 +1,33 @@
-import React from "react";
-import Paper from "material-ui/Paper";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import DirectionsRun from "material-ui/svg-icons/maps/directions-run";
-import DirectionsBike from "material-ui/svg-icons/maps/directions-bike";
+import React from 'react';
+import Paper from 'material-ui/Paper';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
+import DirectionsBike from 'material-ui/svg-icons/maps/directions-bike';
 
 const Stats = props => {
   const style = {
-    height: "100%",
-    width: "100%",
+    height: '100%',
+    width: '100%',
     margin: 20,
-    textAlign: "center",
-    display: "inline-block",
-    color: "#607D8B",
-    fontSize: "2.5em",
-    fontWeight: "800"
+    textAlign: 'center',
+    display: 'inline-block',
+    color: '#607D8B',
+    fontSize: '2.5em',
+    fontWeight: '800'
   };
 
   const svgStyle = {
-    height: "auto",
-    width: "50%",
-    color: "#607D8B",
-    fontSize: "2em",
-    fontWeight: "800",
-    marginTop: "25px"
+    height: 'auto',
+    width: '50%',
+    color: '#607D8B',
+    fontSize: '2em',
+    fontWeight: '800',
+    marginTop: '25px'
   };
 
   let type = props.actType;
   let icon;
-  if (type === "Run") {
+  if (type === 'Run') {
     icon = <DirectionsRun style={svgStyle} />;
   } else {
     icon = <DirectionsBike style={svgStyle} />;
@@ -37,13 +37,13 @@ const Stats = props => {
     <div>
       {/* <h1>STATS</h1> */}
       <Row>
-        <Col xs={4}>
+        <Col xs={12} lg={4}>
           <Paper style={style} zDepth={1}>
             {icon}
           </Paper>
         </Col>
 
-        <Col xs={8}>
+        <Col xs={12} lg={8}>
           <Row>
             <Col xs={6}>
               <Paper style={style} zDepth={1}>
