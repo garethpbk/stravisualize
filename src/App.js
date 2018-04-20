@@ -32,6 +32,7 @@ class App extends Component {
 
     this.handleApiKeyChange = this.handleApiKeyChange.bind(this);
     this.handleApiKeySubmit = this.handleApiKeySubmit.bind(this);
+    this.handleDefaultApiKey = this.handleDefaultApiKey.bind(this);
     this.handleActivityClick = this.handleActivityClick.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
   }
@@ -62,6 +63,11 @@ class App extends Component {
         this.setState({ firstName: "Someone" });
       }) */
       .then(firstName => this.setState({ firstName }));
+  }
+
+  handleDefaultApiKey(e) {
+    this.setState({ apiKey: 'd91f7b4b7cd52eafc9f9a28b04479f16085c1a81' });
+    this.handleApiKeySubmit;
   }
 
   handleActivityClick(data) {
@@ -96,6 +102,7 @@ class App extends Component {
             apiKey={this.state.apiKey}
             onApiKeyChange={this.handleApiKeyChange}
             submitApiKey={this.handleApiKeySubmit}
+            defaultApiKey={this.handleDefaultApiKey}
             open={this.state.open}
             actId={this.state.actId}
             actName={this.state.actName}

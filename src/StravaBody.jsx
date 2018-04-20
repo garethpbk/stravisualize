@@ -23,6 +23,7 @@ export default props => (
       apiKey={props.apiKey}
       onApiKeyChange={props.onApiKeyChange}
       submitApiKey={props.submitApiKey}
+      defaultApiKey={props.defaultApiKey}
       open={props.open}
       onClick={props.onClick}
       handleToggle={props.handleToggle}

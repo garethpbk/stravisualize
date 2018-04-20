@@ -25,6 +25,7 @@ const Activities = props => {
           style={fieldStyle}
         />
         <RaisedButton label="Submit API Key" primary={true} onClick={props.submitApiKey} style={fieldStyle} />
+        <RaisedButton label="Use Default API Key" primary={true} onClick={props.defaultApiKey} style={fieldStyle} />
 
         {props.strava.map(strav => (
           <Strav
