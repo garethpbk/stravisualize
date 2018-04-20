@@ -1,14 +1,14 @@
-import React from "react";
-import polyline from "./polyline.js";
-import Divider from "material-ui/Divider";
-import { ListItem } from "material-ui/List";
-import DirectionsRun from "material-ui/svg-icons/maps/directions-run";
-import DirectionsBike from "material-ui/svg-icons/maps/directions-bike";
+import React from 'react';
+import polyline from './polyline.js';
+import Divider from 'material-ui/Divider';
+import { ListItem } from 'material-ui/List';
+import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
+import DirectionsBike from 'material-ui/svg-icons/maps/directions-bike';
 
 const Strav = props => {
   let actType = props.type;
   let actIcon;
-  if (actType === "Run") {
+  if (actType === 'Run') {
     actIcon = <DirectionsRun />;
   } else {
     actIcon = <DirectionsBike />;
@@ -19,14 +19,14 @@ const Strav = props => {
   let minutes = (props.time - props.time % 60) / 60;
   let seconds = props.time % 60;
   if (seconds < 10) {
-    seconds = "0" + seconds;
+    seconds = '0' + seconds;
   }
-  let time = minutes + ":" + seconds;
+  let time = minutes + ':' + seconds;
 
   let formDate = new Date(props.startdatelocal),
-    locale = "en-us",
-    month = formDate.toLocaleString(locale, { month: "long" });
-  formDate = month + " " + formDate.getDate() + ", " + formDate.getFullYear();
+    locale = 'en-us',
+    month = formDate.toLocaleString(locale, { month: 'long' });
+  formDate = month + ' ' + formDate.getDate() + ', ' + formDate.getFullYear();
 
   let route;
   if (props.polyline) {
@@ -52,6 +52,7 @@ const Strav = props => {
   return (
     <span>
       <ListItem
+        key={props.id}
         primaryText={[<strong>{props.name}</strong>, <br />, formDate]}
         leftIcon={actIcon}
         onClick={() => props.onClick(dataRes)}

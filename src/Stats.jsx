@@ -1,6 +1,6 @@
 import React from 'react';
 import Paper from 'material-ui/Paper';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import DirectionsRun from 'material-ui/svg-icons/maps/directions-run';
 import DirectionsBike from 'material-ui/svg-icons/maps/directions-bike';
 

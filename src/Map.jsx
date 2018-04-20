@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, Polyline } from 'react-google-maps';
 
 const MapComponent = withScriptjs(
@@ -21,7 +21,7 @@ const MapComponent = withScriptjs(
 
       return (
         <GoogleMap
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbpXTSqO8hgDKBGSKFVMBR6C1lDGTam4w"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpUNVE_UooIf_nSAZoq6Evrt1U8_FWuU"
           defaultZoom={13}
           defaultCenter={{ lat: startLat, lng: startLng }}
           center={{ lat: startLat, lng: startLng }}
@@ -35,7 +35,7 @@ const MapComponent = withScriptjs(
     let startLng = -117.16;
     return (
       <GoogleMap
-        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbpXTSqO8hgDKBGSKFVMBR6C1lDGTam4w"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpUNVE_UooIf_nSAZoq6Evrt1U8_FWuU"
         defaultZoom={13}
         defaultCenter={{ lat: startLat, lng: startLng }}
         center={{ lat: startLat, lng: startLng }}

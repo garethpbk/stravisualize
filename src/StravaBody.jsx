@@ -35,7 +35,7 @@ export default props => (
           <Map
             isMarkerShown
             route={props.actPolyline}
-            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpUNVE_UooIf_nSAZoq6Evrt1U8_FWuU"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: '400px' }} />}
             mapElement={<div style={{ height: '100%' }} />}
